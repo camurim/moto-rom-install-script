@@ -12,6 +12,10 @@ if len(argv) < 2:
 xmlFilePath = abspath(argv[1])
 outputScript = abspath(argv[2])
 
+print("----------------------------------------------------------------------------\n")
+print("[*] Welcome to Motorola flashfile.xml to bash script converter for GNU/Linux\n")
+print("----------------------------------------------------------------------------\n")
+
 outputFile = open(outputScript, "w")
 outputFile.write("#!/usr/bin/env bash\n")
 
@@ -46,3 +50,5 @@ for ot in root.iter("step"):
     outputFile.write("%s\n" % (command))
 
 outputFile.close()
+
+print("Finished!\n")
