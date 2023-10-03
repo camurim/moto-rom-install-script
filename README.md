@@ -2,4 +2,4 @@
 
 
 
-Usage: 
+**Usage:** python3 flashfilexml2bash.py flashfile.xml output.sh

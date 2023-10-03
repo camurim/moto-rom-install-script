@@ -6,7 +6,7 @@ from sys import argv, exit
 from os.path import abspath
 
 if len(argv) < 2:
-    print("Syntax: %s filename.xml output.sh" % (argv[0]))
+    print("Syntax: %s flashfile.xml output.sh" % (argv[0]))
     exit(1)
 
 xmlFilePath = abspath(argv[1])
